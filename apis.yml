@@ -11,9 +11,12 @@ type: Index
 position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-tags: []
+tags:
+  - Mining
+  - Cryptocurrency
+  - Mining Pools
 created: '2025-03-01'
-modified: '2026-03-16'
+modified: '2026-04-28'
 url: >-
   https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/apis.yml
 specificationVersion: '0.19'
@@ -27,11 +30,17 @@ apis:
       data can be used. Before you continue with reading this documentation and using
       this API, please read terms and conditions carefully and follow them appropriately
       as by using our API you agree with the terms and conditions.
-    humanURL: ' https://api.minerstat.com/docs-pools'
-    tags: []
+    humanURL: https://api.minerstat.com/docs-pools
+    baseURL: https://api.minerstat.com/v2
+    tags:
+      - Mining
+      - Cryptocurrency
+      - Mining Pools
     properties:
       - type: Documentation
-        url: ' https://api.minerstat.com/docs-pools'
+        url: https://api.minerstat.com/docs-pools
+      - type: OpenAPI
+        url: https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/openapi/minerstat-openapi.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
