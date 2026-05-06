@@ -1,0 +1,69 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Minerstat Mining Pools API
+  description: Public API providing information about mining pools listed on Minerstat, including supported coins, fees, payout
+    thresholds, and pool metadata.
+  tags:
+  - Minerstat
+  - API
+  created: '2026-05-06'
+  modified: '2026-05-06'
+capability:
+  consumes:
+  - type: http
+    namespace: minerstat
+    baseUri: https://api.minerstat.com/v2
+    description: Minerstat Mining Pools API HTTP API.
+    authentication:
+      type: apikey
+      in: header
+      name: X-API-Key
+      value: '{{MINERSTAT_TOKEN}}'
+    resources:
+    - name: pools
+      path: /pools
+      operations:
+      - name: listpools
+        method: GET
+        description: List mining pools
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: minerstat-rest
+    description: REST adapter for Minerstat Mining Pools API.
+    resources:
+    - path: /pools
+      name: listpools
+      operations:
+      - method: GET
+        name: listpools
+        description: List mining pools
+        call: minerstat.listpools
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: minerstat-mcp
+    transport: http
+    description: MCP adapter for Minerstat Mining Pools API for AI agent use.
+    tools:
+    - name: listpools
+      description: List mining pools
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: minerstat.listpools
+      outputParameters:
+      - type: object
+        mapping: $.
+binds:
+- namespace: env
+  keys:
+    MINERSTAT_TOKEN: MINERSTAT_TOKEN
