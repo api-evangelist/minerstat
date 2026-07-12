@@ -19,10 +19,16 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 common:
+  - type: DomainSecurity
+    url: security/minerstat-domain-security.yml
+  - type: Authentication
+    url: authentication/minerstat-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/minerstat
   - type: LinkedIn
     url: https://www.linkedin.com/company/minerstatcom
+  - url: https://medium.com/feed/@minerstat
+    type: Blog
 apis:
   - aid: minerstat:minerstat
     name: Minerstat
