@@ -1,0 +1,14 @@
+{
+  "provider": "minerstat",
+  "sources": [
+    "minerstat-pools-api-openapi.yml"
+  ],
+  "outputs": [
+    "minerstat-pools-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

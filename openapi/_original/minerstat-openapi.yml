@@ -1,0 +1,94 @@
+openapi: 3.0.3
+info:
+  title: Minerstat Mining Pools API
+  description: >-
+    Public API providing information about mining pools listed on Minerstat,
+    including supported coins, fees, payout thresholds, and pool metadata.
+  version: "2.0"
+  contact:
+    name: Minerstat
+    url: https://api.minerstat.com/docs-pools
+  license:
+    name: Minerstat Terms
+    url: https://minerstat.com/terms
+servers:
+  - url: https://api.minerstat.com/v2
+    description: Minerstat public API
+security:
+  - apiKeyHeader: []
+  - apiKeyQuery: []
+tags:
+  - name: Pools
+    description: Mining pool data
+paths:
+  /pools:
+    get:
+      tags:
+        - Pools
+      summary: List mining pools
+      description: >-
+        Retrieve information about all mining pools listed on Minerstat.
+        Pool data updates approximately once per minute. Throttled to roughly
+        12 requests per minute.
+      operationId: listPools
+      responses:
+        '200':
+          description: A list of mining pools.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pool'
+        '400':
+          description: Invalid parameter
+        '401':
+          description: Missing or invalid API key
+        '402':
+          description: Monthly quota exceeded
+        '403':
+          description: Subscription inactive or key revoked
+        '404':
+          description: Content not found
+        '500':
+          description: API or system error
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: Recommended authentication using the X-API-Key header.
+    apiKeyQuery:
+      type: apiKey
+      in: query
+      name: key
+      description: Alternative authentication using the key query parameter.
+  schemas:
+    Pool:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Pool identifier slug.
+        name:
+          type: string
+          description: Pool display name.
+        coin:
+          type: string
+          description: Primary coin or algorithm supported.
+        algorithm:
+          type: string
+          description: Mining algorithm.
+        fee:
+          type: number
+          format: float
+          description: Pool fee percentage.
+        payout_threshold:
+          type: number
+          format: float
+          description: Minimum payout threshold.
+        url:
+          type: string
+          format: uri
+          description: Pool website URL.
