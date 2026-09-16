@@ -1,11 +1,10 @@
 aid: minerstat
 name: Minerstat
-description: >-
-  Minerstat mining pools API is a public API that allows you to obtain basic information about different mining pools
-  that are listed on minerstat. This documentation will help you understand which data is available in the public API
-  and how the data can be used. Before you continue with reading this documentation and using this API, please read
-  terms and conditions carefully and follow them appropriately as by using our API you agree with the terms and
-  conditions.
+description: Minerstat mining pools API is a public API that allows you to obtain basic information about
+  different mining pools that are listed on minerstat. This documentation will help you understand which
+  data is available in the public API and how the data can be used. Before you continue with reading this
+  documentation and using this API, please read terms and conditions carefully and follow them appropriately
+  as by using our API you agree with the terms and conditions.
 type: Index
 deliveryModel:
   model: unknown
@@ -36,26 +35,28 @@ position: Consuming
 access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/minerstat.png
 tags:
-  - Mining
-  - Cryptocurrency
-  - Mining Pools
+- Mining
+- Cryptocurrency
+- Mining Pools
 created: '2025-03-01'
-modified: '2026-05-19'
+modified: '2026-09-16'
 url: https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 common:
-  - type: AgenticAccess
-    url: agentic-access/minerstat-agentic-access.yml
-  - type: DomainSecurity
-    url: security/minerstat-domain-security.yml
-  - type: Authentication
-    url: authentication/minerstat-authentication.yml
-  - type: GitHubOrganization
-    url: https://github.com/minerstat
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/minerstatcom
-  - url: https://medium.com/feed/@minerstat
-    type: Blog
+- type: Website
+  url: https://minerstat.com
+- type: AgenticAccess
+  url: agentic-access/minerstat-agentic-access.yml
+- type: DomainSecurity
+  url: security/minerstat-domain-security.yml
+- type: Authentication
+  url: authentication/minerstat-authentication.yml
+- type: GitHubOrganization
+  url: https://github.com/minerstat
+- type: LinkedIn
+  url: https://www.linkedin.com/company/minerstatcom
+- url: https://medium.com/feed/@minerstat
+  type: Blog
 apis:
 - aid: minerstat:minerstat-pools-api
   name: Minerstat Pools API
@@ -70,5 +71,5 @@ apis:
   - type: Documentation
     url: https://api.minerstat.com/docs-pools
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
