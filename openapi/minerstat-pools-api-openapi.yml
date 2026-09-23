@@ -1,4 +1,4 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
   title: Minerstat Mining Pools API
   description: Public API providing information about mining pools listed on Minerstat, including supported coins, fees, payout thresholds, and pool metadata.
