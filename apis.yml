@@ -43,6 +43,12 @@ modified: '2026-09-16'
 url: https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 common:
+- type: Plans
+  url: plans/minerstat-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/minerstat-rate-limits.yml
+- type: FinOps
+  url: finops/minerstat-finops.yml
 - type: Website
   url: https://minerstat.com
 - type: AgenticAccess
