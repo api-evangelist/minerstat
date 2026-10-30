@@ -1,4 +1,4 @@
-# Minerstat (minerstat)
+# Minerstat
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,53 +66,115 @@
 
 Minerstat mining pools API is a public API that allows you to obtain basic information about different mining pools that are listed on minerstat. This documentation will help you understand which data is available in the public API and how the data can be used. Before you continue with reading this documentation and using this API, please read terms and conditions carefully and follow them appropriately as by using our API you agree with the terms and conditions.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/apis.yml)
+**Areas:** Mining · Cryptocurrency · Mining Pools
 
-## Scope
+## Minerstat on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Minerstat is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/minerstat/](https://apis.io/providers/minerstat/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Mining
-- Cryptocurrency
-- Mining Pools
+- [Minerstat Pools API](https://apis.io/apis/minerstat/minerstat-pools-api/) — Mining pool data
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-03-01
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Minerstat
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Minerstat mining pools API is a public API that allows you to obtain basic information about different mining pools that are listed on minerstat. This documentation will help you understand which data is available in the public API and how the data can be used. Before you continue with reading this documentation and using this API, please read terms and conditions carefully and follow them appropriately as by using our API you agree with the terms and conditions.
+- [Minerstat Agentic Access](https://apis.io/agentic-access/minerstat/minerstat-agentic-access/)
 
-- **Human URL:** [https://api.minerstat.com/docs-pools](https://api.minerstat.com/docs-pools)
-- **Base URL:** `https://api.minerstat.com/v2`
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Mining
-- Cryptocurrency
-- Mining Pools
+- [Minerstat Mining Pools API](https://apis.io/collections/minerstat/open-minerstat/)
+- [Minerstat Mining Pools API](https://apis.io/collections/minerstat/open-minerstat-pools-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://api.minerstat.com/docs-pools)
-- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/minerstat/refs/heads/main/openapi/minerstat-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/minerstat.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/minerstat.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Minerstat Authentication](https://apis.io/security/minerstat/minerstat-authentication/)
+- [Minerstat Domain Security](https://apis.io/security/minerstat/minerstat-domain-security/)
 
-- [GitHub Organization](https://github.com/minerstat)
-- [LinkedIn](https://www.linkedin.com/company/minerstatcom)
+#### Plans and pricing (1)
 
-## Maintainers
+Published plans, tiers and prices.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- [Minerstat Plans Pricing](https://apis.io/plans/minerstat/minerstat-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Minerstat Rate Limits](https://apis.io/rate-limits/minerstat/minerstat-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Minerstat Finops](https://apis.io/finops/minerstat/minerstat-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://minerstat.com)
+- [Blog](https://medium.com/feed/@minerstat)
+- [GitHub](https://github.com/minerstat)
+
+## API Evangelist rating
+
+**Kin Score 25.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 48.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/minerstat/](https://apis.io/providers/minerstat/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Minerstat: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/minerstat/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
